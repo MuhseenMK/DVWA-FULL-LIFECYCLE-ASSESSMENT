@@ -289,5 +289,3 @@ Cybersecurity Student
 *The best way to learn to defend a system is to learn how to break it.*
 ```
 
----
-
