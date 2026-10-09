@@ -154,6 +154,8 @@ whatweb http://localhost
 - `X-Powered-By: PHP/5.5.9-1ubuntu4.25` header exposed
 - Session cookies: `PHPSESSID`, `security`
 
+![WhatWeb fingerprint](screenshots/02-whatweb.png)
+
 ### Web Server Misconfigurations
 
 ```bash
@@ -165,6 +167,8 @@ nikto -h http://localhost
 - Directory listing enabled on `/docs/` and `/config/`
 - `.git` directory exposed
 - `phpinfo.php` accessible
+
+![Nikto scan](screenshots/03-nikto.png)
 
 ### Directory Enumeration
 
@@ -178,6 +182,8 @@ gobuster dir -u http://localhost -w /usr/share/wordlists/dirb/common.txt
 - `/docs/` — documentation directory
 - `/hackable/uploads/` — file upload directory
 - `/php.ini` — PHP configuration file exposed
+
+![Gobuster enumeration](screenshots/04-gobuster.png)
 
 ---
 
